@@ -1,0 +1,18 @@
+{
+    "development": {
+        "PORT": 3000,
+        "MONGODB_URL": "mongodb://localhost:27017/MEANStackDB",
+        "MONGODB_HOST": "localhost",
+        "MONGODB_PORT": "27017",
+        "MONGODB_DBNAME": "MEANStackDB",
+        "DBUSERNAME": "username"
+    },
+    "production": {
+        "PORT": 80,
+        "MONGODB_URL": "mongodb://mongodb.default.svc.cluster.local:27017/MEANStackDB",
+        "MONGODB_HOST": "mongodb.default.svc.cluster.local",
+        "MONGODB_PORT": "27017",
+        "MONGODB_DBNAME": "MEANStackDB",
+        "DBUSERNAME": "username"
+    }
+}   

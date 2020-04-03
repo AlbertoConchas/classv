@@ -1,0 +1,23 @@
+# Default values for buroservice.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# number of api and sidekiq pods
+replicaCount: 1
+deployStrategy: RollingUpdate
+deployMaxSurge: 1 # how many pods we can add at a time
+deployMaxUnavailable: 1 #how many pods can be unavailable during the rolling update
+repository: aconchas/node-backend
+tag: latest
+pullPolicy: Always
+
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  enabled: true
+  type: ClusterIP
+  port: 80
+
+nodeEnv: production
+mongosSecret: mongodb
